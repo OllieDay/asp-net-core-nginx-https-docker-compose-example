@@ -1,0 +1,15 @@
+version: '3.7'
+
+services:
+
+  example.app:
+    image: example.app
+    container_name: example.app
+    build: Example.App
+
+  example.proxy:
+    image: example.proxy
+    container_name: example.proxy
+    build: Example.Proxy
+    ports:
+      - 443:443
