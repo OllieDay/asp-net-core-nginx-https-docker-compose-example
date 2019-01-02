@@ -1,4 +1,4 @@
-FROM nginx:alpine
+FROM nginx:1.15.8-alpine
 EXPOSE 443
 COPY nginx.conf /etc/nginx/nginx.conf
 RUN apk update && \
