@@ -6,7 +6,9 @@ services:
     image: example.app
     container_name: example.app
     build: Example.App
-
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      
   example.proxy:
     image: example.proxy
     container_name: example.proxy
